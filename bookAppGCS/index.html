@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Finder</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <script src="static/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>BookFirst</h1>
+
+        <h2>BookFirst is an app to find a book for you to read!</h2>
+        <h2>You can either choose what's interesting from our library of books, or you can search based on the genre.</h2>
+
+        <label for="ice-cream-choice">Search for a Book to get started:</label>
+        <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+        <datalist id="ice-cream-flavors">
+            <option value="Poet Of The Wrong Generation"></option>
+            <option value="Keeper of the Lost Cities"></option>
+            <option value="Auf Wiedersehen, Sweetheart"></option>
+            <option value="The Book of Joshua II - Believe (Gems and Gents, #3)"></option>
+            <option value="Gombnyomásra"></option>
+        </datalist>
+        <button id="searchBtn" style="margin-left:8px;">Search</button>
+
+        <div class="input-section">
+            <h2></h2>
+            <label for="genre">OR Select your favorite genre to get started!</label>
+            <select name="genres" id="genres">
+                <option value="--SELECT--">--SELECT--</option>
+                <option value="biography">Biography</option>
+                <option value="children">Children</option>
+                <option value="comics">Comics</option>
+                <option value="crime">Crime</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="fiction">Fiction</option>
+                <option value="graphic">Graphic</option>
+                <option value="historical fiction">Historical Fiction</option>
+                <option value="history">History</option>
+                <option value="mystery">Mystery</option>
+                <option value="non-fiction">Non-fiction</option>
+                <option value="paranormal">Paranormal</option>
+                <option value="poetry">Poetry</option>
+                <option value="romance">Romance</option>
+                <option value="thriller">Thriller</option>
+                <option value="young-adult">Young Adult</option>
+            </select>
+
+            <br><br>
+            <button id="submitBtn">Find a Book!</button>
+        </div>
+
+        <div id="responseList" class="response-list"></div>
+    </div>
+</body>
+</html>
